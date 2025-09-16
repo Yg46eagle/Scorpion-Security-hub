@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scorpion Security Hub - Your Digital Guardian Never Sleeps</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fscorpions9261back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-protective sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L18 8L12 6L10 12L4 10L6 16L0 18L6 22L4 28L10 26L12 32L18 30L20 36L22 30L28 32L30 26L36 28L34 22L40 18L34 16L36 10L30 12L28 6L22 8L20 2Z"/>
+                            <circle cx="20" cy="18" r="6" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">Scorpion Security</h1>
+                        <p class="text-xs text-text-secondary">Digital Guardian</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="security_command_homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+                        <div class="relative group">
+                            <button class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Services</button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-elevated opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <a href="penetration_testing_lab.html" class="block px-4 py-2 text-sm text-text-secondary hover:bg-surface">Penetration Testing</a>
+                                <a href="compliance_solutions.html" class="block px-4 py-2 text-sm text-text-secondary hover:bg-surface">Compliance Solutions</a>
+                            </div>
+                        </div>
+                        <a href="threat_intelligence_center.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Threat Intelligence</a>
+                        <a href="client_security_portal.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Client Portal</a>
+                        <a href="incident_response_center.html" class="bg-error text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-error-600 transition-colors">Emergency Response</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="security_command_homepage.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="penetration_testing_lab.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Penetration Testing</a>
+                <a href="compliance_solutions.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Compliance Solutions</a>
+                <a href="threat_intelligence_center.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Threat Intelligence</a>
+                <a href="client_security_portal.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Client Portal</a>
+                <a href="incident_response_center.html" class="bg-error text-white block px-3 py-2 rounded-md text-base font-semibold">Emergency Response</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Real-time Threat Dashboard -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=" 60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><polygon points="30,0 52,15 52,45 30,60 8,45 8,15"></polygon></g>'); background-size: 60px 60px;"></g></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center px-4 py-2 bg-accent/20 rounded-full text-accent text-sm font-medium">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-2 pulse-glow"></div>
+                            Live Threat Monitoring Active
+                        </div>
+                        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                            Your Digital Guardian
+                            <span class="text-accent">Never Sleeps</span>
+                        </h1>
+                        <p class="text-xl text-primary-100 max-w-lg">
+                            Advanced cybersecurity solutions that anticipate, adapt, and evolve with emerging threats. Protecting your digital assets 24/7 with precision and vigilance.
+                        </p>
+                    </div>
+
+                    <!-- Live Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent" id="threats-blocked">2,847</div>
+                            <div class="text-sm text-primary-200">Threats Blocked Today</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent" id="systems-monitored">15,234</div>
+                            <div class="text-sm text-primary-200">Systems Monitored</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent" id="response-time">< 2min</div>
+                            <div class="text-sm text-primary-200">Avg Response Time</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-primary text-lg px-8 py-4">Get Security Assessment</button>
+                        <a href="incident_response_center.html" class="btn-secondary text-lg px-8 py-4 text-center">Emergency Response</a>
+                    </div>
+                </div>
+
+                <!-- Real-time Threat Dashboard -->
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Global Threat Activity</h3>
+                            <div class="flex items-center text-sm text-accent">
+                                <div class="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse"></div>
+                                Live
+                            </div>
+                        </div>
+                        
+                        <!-- Threat Map Visualization -->
+                        <div class="relative h-48 bg-primary-800/50 rounded-lg overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Global threat monitoring visualization" class="w-full h-full object-cover opacity-60" onerror="this.src='https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            
+                            <!-- Scanning Animation Overlay -->
+                            <div class="absolute inset-0">
+                                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent scanning-animation"></div>
+                            </div>
+                            
+                            <!-- Threat Indicators -->
+                            <div class="absolute top-4 left-4 w-3 h-3 bg-error rounded-full pulse-glow"></div>
+                            <div class="absolute top-8 right-6 w-2 h-2 bg-warning rounded-full pulse-glow"></div>
+                            <div class="absolute bottom-6 left-1/3 w-2 h-2 bg-accent rounded-full pulse-glow"></div>
+                        </div>
+
+                        <!-- Recent Threats -->
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-primary-200">Malware Blocked</span>
+                                <span class="text-accent font-mono">847</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-primary-200">Phishing Attempts</span>
+                                <span class="text-warning font-mono">234</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-primary-200">DDoS Mitigated</span>
+                                <span class="text-success font-mono">12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Finder Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Find Your Security Solution</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Identify the right cybersecurity approach based on your organization's unique needs and security maturity level.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Small Business -->
+                <div class="card hover:shadow-elevated transition-all duration-300 group">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Small Business (1-50 employees)</h3>
+                        <p class="text-text-secondary mb-6">Essential protection for growing businesses with limited IT resources.</p>
+                        <ul class="text-sm text-text-secondary space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                24/7 Monitoring
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Email Security
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Basic Compliance
+                            </li>
+                        </ul>
+                        <button class="w-full btn-secondary">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="card hover:shadow-elevated transition-all duration-300 group border-2 border-accent/20">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <div class="inline-block px-3 py-1 bg-accent text-white text-xs font-semibold rounded-full mb-2">Most Popular</div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Enterprise (50+ employees)</h3>
+                        <p class="text-text-secondary mb-6">Comprehensive security for complex organizations with advanced threat landscape.</p>
+                        <ul class="text-sm text-text-secondary space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Advanced Threat Detection
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Penetration Testing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Compliance Management
+                            </li>
+                        </ul>
+                        <button class="w-full btn-primary">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Regulated Industries -->
+                <div class="card hover:shadow-elevated transition-all duration-300 group">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Regulated Industries</h3>
+                        <p class="text-text-secondary mb-6">Specialized compliance and security for healthcare, finance, and government sectors.</p>
+                        <ul class="text-sm text-text-secondary space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                HIPAA/SOX Compliance
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Audit Support
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Risk Assessment
+                            </li>
+                        </ul>
+                        <a href="compliance_solutions.html" class="w-full btn-secondary block text-center">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Protection Metrics -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Active Protection Status</h2>
+                <p class="text-lg text-text-secondary">Real-time security metrics from our global protection network</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-success mb-2" id="threats-prevented">99.7%</div>
+                    <div class="text-sm text-text-secondary">Threats Prevented</div>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-accent mb-2" id="response-speed">1.3min</div>
+                    <div class="text-sm text-text-secondary">Average Response</div>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-primary mb-2" id="uptime">99.99%</div>
+                    <div class="text-sm text-text-secondary">System Uptime</div>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-secondary mb-2" id="clients-protected">2,500+</div>
+                    <div class="text-sm text-text-secondary">Clients Protected</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Client Success Stories</h2>
+                <p class="text-lg text-text-secondary">Measurable security improvements across industries</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Healthcare Success -->
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Healthcare facility" class="w-12 h-12 rounded-lg object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-semibold text-primary">Regional Medical Center</h3>
+                            <p class="text-sm text-text-secondary">Healthcare</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">HIPAA Compliance</span>
+                            <span class="text-sm font-semibold text-success">100%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">Breach Prevention</span>
+                            <span class="text-sm font-semibold text-success">24 months</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">Cost Savings</span>
+                            <span class="text-sm font-semibold text-accent">$2.3M</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-border">
+                        <p class="text-sm text-text-secondary italic">"Scorpion's proactive approach prevented three major breach attempts in our first year."</p>
+                    </div>
+                </div>
+
+                <!-- Financial Services Success -->
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Financial district" class="w-12 h-12 rounded-lg object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-semibold text-primary">Metro Credit Union</h3>
+                            <p class="text-sm text-text-secondary">Financial Services</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">SOX Compliance</span>
+                            <span class="text-sm font-semibold text-success">Certified</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">Fraud Reduction</span>
+                            <span class="text-sm font-semibold text-success">89%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">Response Time</span>
+                            <span class="text-sm font-semibold text-accent">45 seconds</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-border">
+                        <p class="text-sm text-text-secondary italic">"Real-time threat detection has transformed our security posture completely."</p>
+                    </div>
+                </div>
+
+                <!-- Manufacturing Success -->
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Manufacturing facility" class="w-12 h-12 rounded-lg object-cover mr-4" onerror="this.src='https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-semibold text-primary">Industrial Solutions Inc</h3>
+                            <p class="text-sm text-text-secondary">Manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">OT Security</span>
+                            <span class="text-sm font-semibold text-success">Secured</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">Downtime Prevented</span>
+                            <span class="text-sm font-semibold text-success">99.8%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-text-secondary">ROI</span>
+                            <span class="text-sm font-semibold text-accent">340%</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-border">
+                        <p class="text-sm text-text-secondary italic">"Zero production interruptions since implementing Scorpion's solutions."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="btn-primary">View All Case Studies</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threat Landscape Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Current Threat Landscape</h2>
+                <p class="text-lg text-text-secondary">Stay informed about emerging cybersecurity threats</p>
+            </div>
+
+            <!-- Hexagonal Grid Pattern -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-error-50 to-error-100 p-6 transition-all duration-300 hover:shadow-elevated">
+                        <div class="absolute top-0 right-0 w-16 h-16 bg-error/10 rounded-full -mr-8 -mt-8"></div>
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-error" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-primary mb-2">Ransomware</h3>
+                            <p class="text-sm text-text-secondary mb-3">Advanced encryption attacks targeting critical infrastructure</p>
+                            <div class="text-xs text-error font-semibold">HIGH RISK</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-warning-50 to-warning-100 p-6 transition-all duration-300 hover:shadow-elevated">
+                        <div class="absolute top-0 right-0 w-16 h-16 bg-warning/10 rounded-full -mr-8 -mt-8"></div>
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-primary mb-2">Phishing</h3>
+                            <p class="text-sm text-text-secondary mb-3">Sophisticated social engineering campaigns</p>
+                            <div class="text-xs text-warning font-semibold">MEDIUM RISK</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-primary-50 to-primary-100 p-6 transition-all duration-300 hover:shadow-elevated">
+                        <div class="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-full -mr-8 -mt-8"></div>
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-primary mb-2">Zero-Day</h3>
+                            <p class="text-sm text-text-secondary mb-3">Unknown vulnerabilities in software systems</p>
+                            <div class="text-xs text-primary font-semibold">EVOLVING</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-accent-50 to-accent-100 p-6 transition-all duration-300 hover:shadow-elevated">
+                        <div class="absolute top-0 right-0 w-16 h-16 bg-accent/10 rounded-full -mr-8 -mt-8"></div>
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-primary mb-2">DDoS</h3>
+                            <p class="text-sm text-text-secondary mb-3">Distributed denial of service attacks</p>
+                            <div class="text-xs text-accent font-semibold">MONITORED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="threat_intelligence_center.html" class="btn-secondary">View Threat Intelligence Center</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Widget (Floating) -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <div class="relative group">
+            <button class="w-16 h-16 bg-error text-white rounded-full shadow-critical hover:shadow-glow transition-all duration-300 flex items-center justify-center pulse-glow">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+            </button>
+            
+            <!-- Tooltip -->
+            <div class="absolute bottom-full right-0 mb-2 px-3 py-2 bg-secondary text-white text-sm rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 whitespace-nowrap">
+                Emergency Response
+                <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-secondary"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-accent mr-3" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L18 8L12 6L10 12L4 10L6 16L0 18L6 22L4 28L10 26L12 32L18 30L20 36L22 30L28 32L30 26L36 28L34 22L40 18L34 16L36 10L30 12L28 6L22 8L20 2Z"/>
+                            <circle cx="20" cy="18" r="6" fill="white"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-bold">Scorpion Security</h3>
+                            <p class="text-xs text-secondary-300">Digital Guardian</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-300 text-sm mb-4">
+                        Your trusted cybersecurity partner, providing 24/7 protection against evolving digital threats.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="penetration_testing_lab.html" class="text-secondary-300 hover:text-accent transition-colors">Penetration Testing</a></li>
+                        <li><a href="incident_response_center.html" class="text-secondary-300 hover:text-accent transition-colors">Incident Response</a></li>
+                        <li><a href="compliance_solutions.html" class="text-secondary-300 hover:text-accent transition-colors">Compliance Solutions</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-accent transition-colors">Managed Security</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-accent transition-colors">Security Training</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="threat_intelligence_center.html" class="text-secondary-300 hover:text-accent transition-colors">Threat Intelligence</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-accent transition-colors">Security Blog</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-accent transition-colors">Case Studies</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-accent transition-colors">Whitepapers</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-accent transition-colors">Webinars</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center text-secondary-300">
+                            <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +1 (555) 123-SECURE
+                        </li>
+                        <li class="flex items-center text-secondary-300">
+                            <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            security@scorpion.com
+                        </li>
+                        <li class="flex items-start text-secondary-300">
+                            <svg class="w-4 h-4 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            123 Security Blvd<br />Cyber City, CC 12345
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="incident_response_center.html" class="inline-flex items-center px-4 py-2 bg-error text-white text-sm font-semibold rounded-lg hover:bg-error-600 transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                            </svg>
+                            Emergency Response
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-400 text-sm">© 2025 Scorpion Security Hub. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-secondary-400 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-secondary-400 hover:text-accent text-sm transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-secondary-400 hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Real-time counter animations
+        function animateCounter(elementId, targetValue, suffix = '') {
+            const element = document.getElementById(elementId);
+            const startValue = 0;
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                let currentValue;
+                if (typeof targetValue === 'string') {
+                    element.textContent = targetValue;
+                    return;
+                }
+                
+                currentValue = Math.floor(startValue + (targetValue - startValue) * progress);
+                element.textContent = currentValue.toLocaleString() + suffix;
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+        }
+
+        // Initialize counters when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                animateCounter('threats-blocked', 2847);
+                animateCounter('systems-monitored', 15234);
+                animateCounter('clients-protected', 2500, '+');
+            }, 500);
+        });
+
+        // Simulate real-time updates
+        setInterval(() => {
+            const threatsElement = document.getElementById('threats-blocked');
+            const currentThreats = parseInt(threatsElement.textContent.replace(',', ''));
+            const newThreats = currentThreats + Math.floor(Math.random() * 5) + 1;
+            threatsElement.textContent = newThreats.toLocaleString();
+        }, 30000); // Update every 30 seconds
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
